@@ -61,12 +61,39 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				stackit: {
+					orange: 'hsl(var(--stackit-orange))',
+					'orange-hover': 'hsl(var(--stackit-orange-hover))',
+					blue: 'hsl(var(--stackit-blue))',
+					'blue-hover': 'hsl(var(--stackit-blue-hover))',
+					gray: 'hsl(var(--stackit-gray))',
+					'dark-gray': 'hsl(var(--stackit-dark-gray))'
+				},
+				vote: {
+					up: 'hsl(var(--vote-up))',
+					down: 'hsl(var(--vote-down))',
+					neutral: 'hsl(var(--vote-neutral))'
+				},
+				status: {
+					answered: 'hsl(var(--answered))',
+					unanswered: 'hsl(var(--unanswered))'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'stackit-sm': 'var(--shadow-sm)',
+				'stackit-md': 'var(--shadow-md)',
+				'stackit-lg': 'var(--shadow-lg)',
+				'vote': 'var(--shadow-vote)'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +111,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'vote-pulse': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' }
+				},
+				'slide-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'vote-pulse': 'vote-pulse 0.3s ease-in-out',
+				'slide-in': 'slide-in 0.3s ease-out'
 			}
 		}
 	},
