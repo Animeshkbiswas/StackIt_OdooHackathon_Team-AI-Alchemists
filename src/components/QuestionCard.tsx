@@ -21,7 +21,7 @@ interface QuestionCardProps {
 
 export const QuestionCard = ({ question }: QuestionCardProps) => {
   return (
-    <Card className="p-6 hover:shadow-stackit-md transition-all duration-200 hover:-translate-y-1 bg-gradient-card">
+    <Card className="p-4 hover:shadow-md transition-all duration-200 bg-post-bg border-reddit-border rounded-lg">
       <div className="flex gap-4">
         {/* Vote Section */}
         <div className="flex flex-col items-center space-y-2 min-w-[60px]">
@@ -51,7 +51,7 @@ export const QuestionCard = ({ question }: QuestionCardProps) => {
         {/* Content Section */}
         <div className="flex-1 min-w-0">
           <Link to={`/questions/${question.id}`} className="group">
-            <h3 className="text-lg font-semibold text-foreground group-hover:text-stackit-blue transition-colors duration-200 mb-2">
+            <h3 className="text-lg font-semibold text-foreground group-hover:text-reddit-blue transition-colors duration-200 mb-2">
               {question.title}
             </h3>
           </Link>
@@ -66,7 +66,7 @@ export const QuestionCard = ({ question }: QuestionCardProps) => {
               <Badge
                 key={tag}
                 variant="secondary"
-                className="bg-stackit-blue/10 text-stackit-blue hover:bg-stackit-blue hover:text-white cursor-pointer transition-colors duration-200"
+                className="bg-reddit-blue/10 text-reddit-blue hover:bg-reddit-blue hover:text-white cursor-pointer transition-colors duration-200"
               >
                 {tag}
               </Badge>
@@ -81,7 +81,7 @@ export const QuestionCard = ({ question }: QuestionCardProps) => {
             </div>
             <div className="flex items-center space-x-1">
               <span>by</span>
-              <Link to={`/users/${question.author}`} className="text-stackit-blue hover:underline font-medium">
+              <Link to={`/users/${question.author}`} className="text-reddit-blue hover:underline font-medium">
                 {question.author}
               </Link>
             </div>

@@ -85,7 +85,7 @@ const HomePage = () => {
                   {mockQuestions.length.toLocaleString()} questions
                 </p>
               </div>
-              <Button variant="stackit" asChild className="w-full sm:w-auto">
+              <Button variant="reddit" asChild className="w-full sm:w-auto">
                 <Link to="/ask">Ask New Question</Link>
               </Button>
             </div>
@@ -112,7 +112,7 @@ const HomePage = () => {
           <div className="w-full lg:w-80">
             <div className="sticky top-24 space-y-6">
               {/* Popular Tags */}
-              <div className="bg-card p-6 rounded-lg shadow-stackit-sm border">
+              <div className="bg-card p-6 rounded-lg shadow-sm border-reddit-border">
                 <h3 className="text-lg font-semibold mb-4 text-foreground">Popular Tags</h3>
                 <div className="flex flex-wrap gap-2">
                   {["react", "javascript", "python", "sql", "nodejs", "css", "html", "typescript"].map((tag) => (
@@ -120,7 +120,7 @@ const HomePage = () => {
                       key={tag}
                       variant="secondary"
                       size="sm"
-                      className="text-xs hover:bg-stackit-blue hover:text-white transition-colors duration-200"
+                      className="text-xs hover:bg-reddit-blue hover:text-white transition-colors duration-200 rounded-full"
                     >
                       {tag}
                     </Button>
@@ -129,7 +129,7 @@ const HomePage = () => {
               </div>
 
               {/* Quick Stats */}
-              <div className="bg-card p-6 rounded-lg shadow-stackit-sm border">
+              <div className="bg-card p-6 rounded-lg shadow-sm border-reddit-border">
                 <h3 className="text-lg font-semibold mb-4 text-foreground">Community Stats</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">

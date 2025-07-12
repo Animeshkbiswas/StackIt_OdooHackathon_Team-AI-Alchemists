@@ -55,7 +55,7 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }: Pagination
             <span className="px-3 py-2 text-muted-foreground">...</span>
           ) : (
             <Button
-              variant={currentPage === page ? "stackit" : "outline"}
+              variant={currentPage === page ? "reddit" : "outline"}
               size="sm"
               onClick={() => onPageChange(page as number)}
               className="min-w-[40px]"

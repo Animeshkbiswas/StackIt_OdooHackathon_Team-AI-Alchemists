@@ -108,7 +108,7 @@ FROM your_table;
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
         <nav className="text-sm mb-6">
-          <Link to="/" className="text-stackit-blue hover:underline">
+          <Link to="/" className="text-reddit-blue hover:underline">
             Questions
           </Link>
           <span className="mx-2 text-muted-foreground">&gt;</span>
@@ -156,7 +156,7 @@ FROM your_table;
                       <Badge
                         key={tag}
                         variant="secondary"
-                        className="bg-stackit-blue/10 text-stackit-blue hover:bg-stackit-blue hover:text-white cursor-pointer"
+                        className="bg-reddit-blue/10 text-reddit-blue hover:bg-reddit-blue hover:text-white cursor-pointer rounded-full"
                       >
                         {tag}
                       </Badge>
@@ -178,7 +178,7 @@ FROM your_table;
                     <div className="flex items-center space-x-2">
                       <Clock className="h-3 w-3" />
                       <span>asked {question.timeAgo} by</span>
-                      <Link to={`/users/${question.author}`} className="text-stackit-blue hover:underline font-medium">
+                      <Link to={`/users/${question.author}`} className="text-reddit-blue hover:underline font-medium">
                         {question.author}
                       </Link>
                     </div>
@@ -222,7 +222,7 @@ FROM your_table;
                         <div className="flex items-center justify-end text-sm text-muted-foreground">
                           <div className="flex items-center space-x-2">
                             <span>answered {answer.timeAgo} by</span>
-                            <Link to={`/users/${answer.author}`} className="text-stackit-blue hover:underline font-medium">
+                            <Link to={`/users/${answer.author}`} className="text-reddit-blue hover:underline font-medium">
                               {answer.author}
                             </Link>
                           </div>
@@ -270,7 +270,7 @@ FROM your_table;
                 </div>
                 
                 <div className="flex justify-end">
-                  <Button type="submit" variant="stackit" disabled={!newAnswer.trim()}>
+                  <Button type="submit" variant="reddit" disabled={!newAnswer.trim()}>
                     Submit Answer
                   </Button>
                 </div>
@@ -293,7 +293,7 @@ FROM your_table;
                     <Link
                       key={index}
                       to={`/questions/${index + 2}`}
-                      className="block text-sm text-stackit-blue hover:underline"
+                      className="block text-sm text-reddit-blue hover:underline"
                     >
                       {title}
                     </Link>

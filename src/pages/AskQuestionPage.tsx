@@ -45,7 +45,7 @@ const AskQuestionPage = () => {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
         <nav className="text-sm mb-6">
-          <Link to="/" className="text-stackit-blue hover:underline">
+          <Link to="/" className="text-reddit-blue hover:underline">
             Questions
           </Link>
           <span className="mx-2 text-muted-foreground">&gt;</span>
@@ -141,7 +141,7 @@ const AskQuestionPage = () => {
                       <Badge
                         key={tag}
                         variant="secondary"
-                        className="bg-stackit-blue text-white flex items-center gap-1"
+                        className="bg-reddit-blue text-white flex items-center gap-1 rounded-full"
                       >
                         {tag}
                         <button
@@ -179,7 +179,7 @@ const AskQuestionPage = () => {
             </Button>
             <Button 
               type="submit" 
-              variant="stackit"
+              variant="reddit"
               disabled={!title.trim() || !description.trim() || tags.length === 0}
             >
               Submit Question

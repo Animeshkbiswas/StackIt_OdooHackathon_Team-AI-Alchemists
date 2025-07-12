@@ -62,13 +62,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				stackit: {
-					orange: 'hsl(var(--stackit-orange))',
-					'orange-hover': 'hsl(var(--stackit-orange-hover))',
-					blue: 'hsl(var(--stackit-blue))',
-					'blue-hover': 'hsl(var(--stackit-blue-hover))',
-					gray: 'hsl(var(--stackit-gray))',
-					'dark-gray': 'hsl(var(--stackit-dark-gray))'
+				reddit: {
+					orange: 'hsl(var(--reddit-orange))',
+					'orange-hover': 'hsl(var(--reddit-orange-hover))',
+					blue: 'hsl(var(--reddit-blue))',
+					'blue-hover': 'hsl(var(--reddit-blue-hover))',
+					gray: 'hsl(var(--reddit-gray))',
+					'dark-gray': 'hsl(var(--reddit-dark-gray))',
+					border: 'hsl(var(--reddit-border))'
 				},
 				vote: {
 					up: 'hsl(var(--vote-up))',
@@ -78,7 +79,10 @@ export default {
 				status: {
 					answered: 'hsl(var(--answered))',
 					unanswered: 'hsl(var(--unanswered))'
-				}
+				},
+				'post-bg': 'hsl(var(--post-bg))',
+				'sidebar-bg': 'hsl(var(--sidebar-bg))',
+				'hover-bg': 'hsl(var(--hover-bg))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -37,7 +37,7 @@ export const Header = () => {
 
             {/* Desktop navigation */}
             <div className="hidden md:flex items-center space-x-4">
-              <Button variant="stackit" asChild>
+              <Button variant="reddit" asChild>
                 <Link to="/ask">Ask Question</Link>
               </Button>
               
@@ -45,7 +45,7 @@ export const Header = () => {
                 <Bell className="h-5 w-5" />
               </Button>
               
-              <Button variant="stackit-outline" asChild>
+              <Button variant="reddit-outline" asChild>
                 <Link to="/login">Login</Link>
               </Button>
             </div>
